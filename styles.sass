@@ -1,0 +1,118 @@
+*, *:before, *:after
+    box-sizing: border-box
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    text-size-adjust: none
+
+footer, header, nav, section, main
+    display: block
+
+body
+    line-height: 1
+
+ol, ul
+    list-style: none
+
+blockquote, q
+    quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+    content: ''
+    content: none
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+
+input
+    -webkit-appearance: none
+    border-radius: 0
+// Mano kodas
+
+body
+    background-color: rgba(233, 227, 227, 0.87)
+
+h1
+    margin: 15px 0 20px 10px
+    font-weight: bold
+    font-size: 40px
+
+p
+    font-size: 20px
+    margin:   15px 0 20px 10px
+
+ul
+   list-style-type: none
+   margin: 0 0 20px 35px
+
+li span 
+
+    background-color: rgb(2, 204, 19)
+    color: rgb(255, 255, 255)
+    border: solid 1px rgb(0, 0, 0)
+    border-radius: 30px 15px 
+    font-size: 20px
+    margin: 0 20px
+
+table,tr,th,td
+    border: 1px solid black
+table
+    background-color: rgb(255, 255, 255)
+    margin: 20px 5px
+            
+    th 
+        background-color: rgb(137, 147, 252)
+        color: white
+        padding: 6px
+        border-bottom: solid 2px blue
+        &:first-child,&:last-child
+            border-radius: 15px 
+    tr
+        background-color: rgb(123, 196, 230)
+        &:nth-child(even)
+            background-color: rgb(76, 61, 165)
+
+fieldset
+    border: 1px solid black
+    max-width: 50%
+    margin: 0px 0 20px 10px  
+    legend
+        margin-left: 20px
+        margin-bottom: 20px
+    div
+        margin-left: 10px
+        margin-bottom: 10px 
+        position: relative
+        &:last-child
+            max-width: 50%
+
+        select 
+            position: absolute
+            margin-left: 50%
+            top: 0
+            left: 0
+
+        input
+            position: absolute
+            top: 0
+            left: 0
+            margin-left: 50%
+        span
+            input[type="radio"]
+            -webkit-appearance: radio
+            display: inline-block
+
+input[type='submit']
+    margin-left: 300px
+    background-color: rgb(20, 148, 8)
+    color: white
+    border-radius: 15px
+    border: 2px solid white
