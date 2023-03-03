@@ -43,7 +43,7 @@ table {
 }
 
 input {
-  -webkit-appearance: none;
+  -webkit-appearance: radio;
   border-radius: 0;
 }
 
@@ -71,8 +71,8 @@ li span {
   background-color: rgb(2, 204, 19);
   color: rgb(255, 255, 255);
   border: solid 1px rgb(0, 0, 0);
-  border-radius: 30px 15px;
-  font-size: 20px;
+  border-radius: 60%/30%;
+  font-size: 15px;
   margin: 0 20px;
 }
 
@@ -82,7 +82,7 @@ table, tr, th, td {
 
 table {
   background-color: rgb(255, 255, 255);
-  margin: 20px 5px;
+  margin: 20px 10px;
 }
 table th {
   background-color: rgb(137, 147, 252);
@@ -114,25 +114,22 @@ fieldset div {
   margin-bottom: 10px;
   position: relative;
 }
-fieldset div:last-child {
-  max-width: 50%;
-}
 fieldset div select {
   position: absolute;
   margin-left: 50%;
   top: 0;
   left: 0;
 }
-fieldset div input {
+fieldset div input[type=text] {
   position: absolute;
   top: 0;
   left: 0;
   margin-left: 50%;
 }
-fieldset div span {
-  -webkit-appearance: radio;
-  display: inline-block;
+fieldset div span:nth-child(2) {
+  margin: 0px 0 20px 30%;
 }
+
 input[type=submit] {
   margin-left: 300px;
   background-color: rgb(20, 148, 8);

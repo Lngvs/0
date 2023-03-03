@@ -33,7 +33,7 @@ table
     border-spacing: 0
 
 input
-    -webkit-appearance: none
+    -webkit-appearance: radio
     border-radius: 0
 // Mano kodas
 
@@ -58,15 +58,15 @@ li span
     background-color: rgb(2, 204, 19)
     color: rgb(255, 255, 255)
     border: solid 1px rgb(0, 0, 0)
-    border-radius: 30px 15px 
-    font-size: 20px
+    border-radius:  60% / 30%
+    font-size: 15px
     margin: 0 20px
 
 table,tr,th,td
     border: 1px solid black
 table
     background-color: rgb(255, 255, 255)
-    margin: 20px 5px
+    margin: 20px 10px
             
     th 
         background-color: rgb(137, 147, 252)
@@ -91,8 +91,6 @@ fieldset
         margin-left: 10px
         margin-bottom: 10px 
         position: relative
-        &:last-child
-            max-width: 50%
 
         select 
             position: absolute
@@ -100,15 +98,15 @@ fieldset
             top: 0
             left: 0
 
-        input
+        input[type='text']
             position: absolute
             top: 0
             left: 0
             margin-left: 50%
         span
-            input[type="radio"]
-            -webkit-appearance: radio
-            display: inline-block
+            &:nth-child(2)
+                margin: 0px 0 20px 30%                
+            
 
 input[type='submit']
     margin-left: 300px
